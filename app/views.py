@@ -1,25 +1,22 @@
-from os import path
-
 from flask import render_template
 
 from app import app
-from app.lib.lorem import Lorem
+from app.lib.teams import RandomGroups
 
 
 @app.route("/")
 @app.route("/index")
 def index():
+  
+    groups = RandomGroups()
+
+    return render_template("index.html", groups = groups.teamed_groups)
+
+
+
+
+
     
-    filepath = path.join(path.dirname(__file__), "data/lorem.txt")
-
-    lorem = Lorem(words_file = filepath)
-
-    lorem_text = lorem.get_lorem_text(200, 500)
-
-    return render_template("index.html", lorem_text = lorem_text)
-
-
-
 
 
 

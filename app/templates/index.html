@@ -2,12 +2,27 @@
 
 {% block content %}
     <div class="well">
-        Lorem ipsum {{ lorem_text }}
+        <!-- {{ groups }} -->
+
+        {% for group in groups %}
+            <p>
+                <b>{{ loop.index }}:</b> {{ group }}  
+             
+                {% if loop.first %}
+                {% endif %}
+             
+                {% if loop.last %}
+                {% endif %}
+             
+            </p>
+            {% endfor %}
+
+
     </div>
     <a  
         class = "btn btn-primary btn-lg btn-block"
         href="{{ url_for('index') }}"
         >
-        GENERATE LOREM IPSUM
+        GENERATE RANDOM TEAM NAMES
     </a>
 {% endblock %}

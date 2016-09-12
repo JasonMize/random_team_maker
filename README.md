@@ -1,6 +1,6 @@
-# Lorem Ipsum
+# Random Team Generator
 
-Create a lorem ipsum generator
+Create a random assortment of team members and team names.
 
 ## Setup
 * `mkvirtualenv -p python3 flask-package`
