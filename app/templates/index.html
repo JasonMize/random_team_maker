@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="well">
+        Lorem ipsum {{ lorem_text }}
+    </div>
+    <a  
+        class = "btn btn-primary btn-lg btn-block"
+        href="{{ url_for('index') }}"
+        >
+        GENERATE LOREM IPSUM
+    </a>
+{% endblock %}

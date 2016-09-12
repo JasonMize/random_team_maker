@@ -1,7 +1,10 @@
-#Flask Hello World
+# Lorem Ipsum
 
-##Setup
-* `mkvirtualenv -p python3 flask-hello-world`
+Create a lorem ipsum generator
+
+## Setup
+* `mkvirtualenv -p python3 flask-package`
 * `pip install -r requirements.txt`
-* `export FLASK_APP=main.py`
-* `flask run`
+
+## Run the flask app
+`python run.py`
